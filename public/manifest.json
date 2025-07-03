@@ -1,25 +1,167 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "name": "The Ganjaguru: Your Cosmic Cannabis Concierge",
+  "short_name": "Ganjaguru",
+  "description": "The AI-powered, gravity-gone cannabis metaverse. Explore strains, design custom products, automate deliveries, and elevate your cannabis experience with personalized AI guidance and a seamless, immersive interface. From seed to smoke, always lit.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#121212",
+  "theme_color": "#4CAF50",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "/assets/icons/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "/assets/icons/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     },
     {
-      "src": "logo512.png",
+      "src": "/assets/icons/maskable_icon.png",
+      "sizes": "512x512",
       "type": "image/png",
-      "sizes": "512x512"
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icons/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/ms-icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "screenshots": [
+    {
+      "src": "/assets/screenshots/mobile-screenshot-1.png",
+      "sizes": "375x812",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Immersive Chatbot Interface"
+    },
+    {
+      "src": "/assets/screenshots/mobile-screenshot-2.png",
+      "sizes": "375x812",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "3D Product Customization with AR Overlay"
+    },
+    {
+      "src": "/assets/screenshots/mobile-screenshot-3.png",
+      "sizes": "375x812",
+      "type": "image/png",
+      "platform": "narrow",
+      "label": "Automated Eco-Friendly Delivery Tracker"
+    },
+    {
+      "src": "/assets/screenshots/desktop-screenshot-1.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "Anti-Gravity AI Dashboard"
+    },
+    {
+      "src": "/assets/screenshots/desktop-screenshot-2.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "AI-Powered Strain Explorer & Cultivation Hub"
+    },
+    {
+      "src": "/assets/screenshots/desktop-screenshot-3.png",
+      "sizes": "1280x800",
+      "type": "image/png",
+      "platform": "wide",
+      "label": "HempPimp Automated Business Insights"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Design Studio",
+      "short_name": "Design",
+      "description": "Launch the custom 3D product design studio",
+      "url": "/design-studio",
+      "icons": [
+        { "src": "/assets/icons/shortcut-design-96x96.png", "sizes": "96x96" },
+        { "src": "/assets/icons/shortcut-design-192x192.png", "sizes": "192x192" }
+      ]
+    },
+    {
+      "name": "Chat with Ganjaguru",
+      "short_name": "Chat",
+      "description": "Start a conversation with your AI budtender for personalized recommendations",
+      "url": "/chat",
+      "icons": [
+        { "src": "/assets/icons/shortcut-chat-96x96.png", "sizes": "96x96" },
+        { "src": "/assets/icons/shortcut-chat-192x192.png", "sizes": "192x192" }
+      ]
+    },
+    {
+      "name": "Explore Products",
+      "short_name": "Products",
+      "description": "Browse the curated catalog of eco-friendly cannabis products and accessories",
+      "url": "/products",
+      "icons": [
+        { "src": "/assets/icons/shortcut-products-96x96.png", "sizes": "96x96" },
+        { "src": "/assets/icons/shortcut-products-192x192.png", "sizes": "192x192" }
+      ]
+    },
+    {
+      "name": "Grow Lab",
+      "short_name": "Grow",
+      "description": "Access AI-powered cultivation guides and grow room designs",
+      "url": "/grow-lab",
+      "icons": [
+        { "src": "/assets/icons/shortcut-grow-96x96.png", "sizes": "96x96" },
+        { "src": "/assets/icons/shortcut-grow-192x192.png", "sizes": "192x192" }
+      ]
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.ganjaguru.android",
+      "id": "com.ganjaguru.android"
+    },
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/app/ganjaguru/id123456789"
+    },
+    {
+      "platform": "windows",
+      "url": "https://www.microsoft.com/store/apps/ganjaguru/9WZDNCRFJHZ4",
+      "id": "9WZDNCRFJHZ4"
+    }
+  ],
+  "prefer_related_applications": true,
+  "id": "com.ganjaguru.pwa",
+  "protocol_handlers": [
+    {
+      "protocol": "web+ganjaguru",
+      "url": "/%s"
+    },
+    {
+      "protocol": "web+cannabis",
+      "url": "/search?q=%s"
+    }
+  ],
+  "categories": ["lifestyle", "shopping", "utility", "education"],
+  "iarc_rating_id": "e2a543e3-54ed-4560-8461-46b5a3f2b67f"
 }
+
+
