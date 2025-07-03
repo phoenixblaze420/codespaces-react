@@ -2,6 +2,14 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Embedded Debug",
+      "type": "embedded-debug",
+      "request": "launch",
+      "serialNumber": "<serial number of your device>",
+      "program": "${command:embedded-debug.getApplicationFile}",
+      "cmsisPack": "<path or URL of CMSIS Pack for your device>"
+    },
+    {
       "name": "Run application",
       "type": "node",
       "request": "launch",
